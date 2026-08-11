@@ -1,0 +1,19 @@
+# Documentation-only path inventory.
+# The archival scripts do not automatically read this file; update their
+# placeholder Path constants in an isolated working copy before execution.
+
+project_root = "/absolute/path/to/PDS"
+database_root = "/absolute/path/to/Database"
+
+[sources]
+aact = "/absolute/path/to/AACT/source"
+faers = "/absolute/path/to/FAERS/source"
+jader_v5 = "/absolute/path/to/JADER/v5"
+meddra_28 = "/absolute/path/to/licensed/MedDRA/28.0"
+fda = "/absolute/path/to/FDA/source"
+
+[outputs]
+processed = "/absolute/path/to/private/processed"
+analysis = "/absolute/path/to/private/analysis"
+figures = "/absolute/path/to/private/figures"
+tables = "/absolute/path/to/private/tables"
