@@ -8,7 +8,7 @@ import json
 from pathlib import Path
 
 
-PROJECT = Path("/path/to/PDS")
+PROJECT = Path("/path/to/project")
 OUT = PROJECT / "preflight_v2/faers_pt_repair"
 PROC = PROJECT / "data/processed/preflight_v2/faers_pt_repair"
 

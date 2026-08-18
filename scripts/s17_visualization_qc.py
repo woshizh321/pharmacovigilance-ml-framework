@@ -12,7 +12,7 @@ from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]
 FIG = ROOT / "figures"
-BEFORE = Path("/tmp/pds_command18_analysis_before.sha256")
+BEFORE = Path("/tmp/pvml_command18_analysis_before.sha256")
 
 
 def read(rel: str) -> pd.DataFrame:
@@ -61,7 +61,7 @@ def main():
         "FigureS8_design_sensitivity",
     ]
 
-    after = Path("/tmp/pds_command18_analysis_after.sha256")
+    after = Path("/tmp/pvml_command18_analysis_after.sha256")
     sha_inventory(ROOT / "analysis", after)
     checks["01_analysis_directory_unchanged"] = BEFORE.exists() and BEFORE.read_bytes() == after.read_bytes()
     checks["02_no_model_prediction_bootstrap_shap_or_calibration_recomputation"] = checks["01_analysis_directory_unchanged"]

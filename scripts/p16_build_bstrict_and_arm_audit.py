@@ -12,7 +12,7 @@ from pathlib import Path
 import duckdb
 
 
-PROJECT = Path("/path/to/PDS")
+PROJECT = Path("/path/to/project")
 OUT = PROJECT / "preflight_v2"
 PROC = PROJECT / "data/processed/preflight_v2"
 AACT = Path("/path/to/Database/AACT/aact.duckdb")

@@ -12,7 +12,7 @@ from openpyxl import load_workbook
 
 ROOT = Path(__file__).resolve().parents[1]
 TAB = ROOT / "tables"
-BEFORE = Path("/tmp/pds_command19_analysis_before.sha256")
+BEFORE = Path("/tmp/pvml_command19_analysis_before.sha256")
 
 
 def read(rel: str) -> pd.DataFrame:
@@ -53,7 +53,7 @@ def main():
     checks: dict[str, bool] = {}
     notes: dict[str, object] = {}
 
-    after = Path("/tmp/pds_command19_analysis_after.sha256")
+    after = Path("/tmp/pvml_command19_analysis_after.sha256")
     sha_inventory(ROOT / "analysis", after)
     checks["01_analysis_directory_unchanged"] = BEFORE.exists() and BEFORE.read_bytes() == after.read_bytes()
     checks["02_no_scientific_recomputation"] = checks["01_analysis_directory_unchanged"]

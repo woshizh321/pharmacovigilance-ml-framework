@@ -18,7 +18,7 @@ import duckdb
 from p10_faers_meddra28_repair import index_add, norm_l1, norm_l2, read_asc, resolve_index
 
 
-PROJECT = Path("/path/to/PDS")
+PROJECT = Path("/path/to/project")
 AACT = Path("/path/to/Database/AACT/aact.duckdb")
 OUT = PROJECT / "preflight_v2/faers_pt_repair"
 PROC = PROJECT / "data/processed/preflight_v2/faers_pt_repair"

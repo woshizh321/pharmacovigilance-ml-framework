@@ -1,7 +1,7 @@
 # GitHub Release QC
 
 **Status:** PASS  
-**Prepared from:** private frozen PDS source project  
+**Prepared from:** private frozen source project
 **Release root:** curated standalone repository
 
 ## Scope

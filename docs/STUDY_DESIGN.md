@@ -10,7 +10,7 @@ Among adverse-event pairs represented in qualifying premarketing clinical-trial 
 - ClinicalTrials.gov/AACT snapshot dated 2026-05-01: trial, arm, adverse-event, denominator, and programme characteristics.
 - FAERS through 2025 Q4: FDA-anchored postapproval reporting outcomes.
 - MedDRA 28.0: canonical Preferred Term and System Organ Class identity.
-- JADER v5 snapshot dated 2026-07: cumulative cross-database replication.
+- Normalized cumulative JADER snapshot dated 2026-07: cumulative cross-database replication.
 
 No source data or licensed terminology is included in this repository.
 
@@ -64,7 +64,7 @@ Primary model interpretation is out-of-fold/out-of-drug. Encoded contributions a
 
 ## JADER role
 
-JADER v5 uses normalized tables, distinct case ID, target-drug primary-suspect exposure, and canonical PT identity. It does not require FAERS-style case-version deduplication. JADER provides cumulative cross-database reporting consistency only because a validated Japanese approval/market-entry anchor was not incorporated.
+The normalized cumulative JADER data use normalized tables, distinct case ID, target-drug primary-suspect exposure, and canonical PT identity. They do not require FAERS-style case-version deduplication. JADER provides cumulative cross-database reporting consistency only because a validated Japanese approval/market-entry anchor was not incorporated.
 
 ## Scientific boundary
 

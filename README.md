@@ -1,4 +1,6 @@
-# PDS: Premarketing Safety Profiles and Postmarketing Disproportionality
+# Pharmacovigilance ML Framework
+
+Premarketing safety profiles and postmarketing reporting-signal prediction.
 
 This repository contains the methods code and study-design documentation for a database-linked pharmacovigilance prediction study. It is prepared as a **code-only release**: no row-level or aggregate analytic datasets, trained models, predictions, SHAP values, figures, publication tables, manuscripts, licensed terminology files, identity crosswalks, or local system configuration are included.
 
@@ -54,7 +56,7 @@ python tools/check_release.py
 
 ## Path configuration
 
-Absolute paths from the local analysis environment were replaced in the release copies with `/path/to/PDS`, `/path/to/Database`, or `/path/to/user`. This was a disclosure-only transformation; algorithmic logic was not intentionally changed.
+Absolute paths from the local analysis environment were replaced in the release copies with `/path/to/project`, `/path/to/Database`, or `/path/to/user`. This was a disclosure-only transformation; algorithmic logic was not intentionally changed.
 
 The scripts are archival workflow code rather than a turnkey package. Before execution, configure an isolated working copy using `config/paths.example.toml` and update the placeholder path constants. Do not edit the frozen source project to configure a public reproduction.
 
@@ -67,7 +69,7 @@ See [Reproducibility](docs/REPRODUCIBILITY.md) for the staged workflow and autho
 ## Data-quality safeguards reflected in the code
 
 - The legacy FAERS PT-code aggregate is defective and must not be reused; repaired MedDRA 28.0 canonical event identity is required.
-- JADER v5 normalized tables are used; JADER v4 indication fields are deprecated.
+- Normalized cumulative JADER tables are used; earlier internal indication fields are deprecated.
 - Unreported ClinicalTrials.gov adverse events are not biological zeros.
 - Exact-title arm attribution is selective; positional arm recovery is not part of the primary analysis.
 - Drug-grouped development and a later-drug temporal holdout protect against pair-level leakage.

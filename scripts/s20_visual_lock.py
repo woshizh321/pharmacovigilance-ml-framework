@@ -12,9 +12,9 @@ ROOT = Path(__file__).resolve().parents[1]
 FIG = ROOT / "figures"
 TAB = ROOT / "tables"
 DOC = ROOT / "docs" / "PUBLICATION_VISUAL_LOCK_v1.md"
-ANALYSIS_BEFORE = Path("/tmp/pds_command20_analysis_before.sha256")
-UNCHANGED_FIGURES_BEFORE = Path("/tmp/pds_command20_unchanged_figures_before.sha256")
-TABLES_BEFORE = Path("/tmp/pds_command20_tables_before.sha256")
+ANALYSIS_BEFORE = Path("/tmp/pvml_command20_analysis_before.sha256")
+UNCHANGED_FIGURES_BEFORE = Path("/tmp/pvml_command20_unchanged_figures_before.sha256")
+TABLES_BEFORE = Path("/tmp/pvml_command20_tables_before.sha256")
 
 FIGURE_BASES = [
     "Figure1_study_design",

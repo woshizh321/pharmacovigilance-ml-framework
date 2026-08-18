@@ -13,7 +13,7 @@ from pathlib import Path
 import duckdb
 
 
-PROJECT = Path("/path/to/PDS")
+PROJECT = Path("/path/to/project")
 RAW = Path("/path/to/Database/Faers/FAERS_SUPERMASTER_V5_1_2004-2025.parquet")
 CANONICAL = PROJECT / "preflight_v2/faers_pt_repair/faers_meddra28_canonical.csv"
 OUT = PROJECT / "preflight_v2/faers_pt_repair"

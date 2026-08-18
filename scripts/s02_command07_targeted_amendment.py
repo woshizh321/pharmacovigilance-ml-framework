@@ -22,7 +22,7 @@ import duckdb
 from s02_section2_coverage import fetch_dicts, md_table, pct, sha256, stat_identity, write_csv
 
 
-PROJECT = Path("/path/to/PDS")
+PROJECT = Path("/path/to/project")
 OUT = PROJECT / "analysis/section2_coverage"
 FIG = OUT / "09_figure2_source_data"
 HISTORY = OUT / "history"
@@ -133,7 +133,7 @@ def main() -> None:
 
     con = duckdb.connect()
     con.execute(
-        "SET threads=8; SET memory_limit='20GB'; SET temp_directory='/private/tmp/pds_duckdb'; "
+        "SET threads=8; SET memory_limit='20GB'; SET temp_directory='/private/tmp/pvml_duckdb'; "
         "SET preserve_insertion_order=false; SET enable_progress_bar=false"
     )
     con.execute(f"ATTACH '{AACT_DB}' AS a (READ_ONLY)")

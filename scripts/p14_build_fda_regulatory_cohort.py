@@ -19,7 +19,7 @@ from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
 
-PROJECT = Path("/path/to/PDS")
+PROJECT = Path("/path/to/project")
 FDA_DIR = PROJECT / "data_external/fda"
 PROC = PROJECT / "data/processed/preflight_v2"
 OUT = PROJECT / "preflight_v2"

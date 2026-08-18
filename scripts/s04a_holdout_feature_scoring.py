@@ -109,7 +109,7 @@ def main() -> None:
     VERIFY_MD.write_text("\n".join(verify_lines) + "\n", encoding="utf-8")
 
     con = duckdb.connect()
-    con.execute("SET threads=8; SET memory_limit='20GB'; SET temp_directory='/private/tmp/pds_s04a_duckdb'; SET preserve_insertion_order=false; SET enable_progress_bar=false")
+    con.execute("SET threads=8; SET memory_limit='20GB'; SET temp_directory='/private/tmp/pvml_s04a_duckdb'; SET preserve_insertion_order=false; SET enable_progress_bar=false")
     con.execute(f"ATTACH '{AACT_DB}' AS a (READ_ONLY)")
 
     # Structural reconciliation is outcome-free and must complete before any model prediction.

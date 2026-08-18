@@ -13,7 +13,7 @@ This release documents the original workflow but does not distribute the data or
 
 ## Paths
 
-The release scripts use sanitized placeholders such as `/path/to/PDS` and `/path/to/Database`. `config/paths.example.toml` is a documentation inventory; scripts do not automatically read it. Configure path constants only in an isolated reproduction copy.
+The release scripts use sanitized placeholders such as `/path/to/project` and `/path/to/Database`. `config/paths.example.toml` is a documentation inventory; scripts do not automatically read it. Configure path constants only in an isolated reproduction copy.
 
 Do not point a reproduction script at the source project or any raw-data directory with write permissions. Use separate, private output directories.
 

@@ -24,7 +24,7 @@ import pandas as pd
 from sklearn.model_selection import StratifiedGroupKFold
 
 
-PROJECT = Path("/path/to/PDS")
+PROJECT = Path("/path/to/project")
 OUT = PROJECT / "analysis/section3_model"
 AACT_DB = Path("/path/to/Database/AACT/aact.duckdb")
 SECTION1 = PROJECT / "analysis/section1_cohort/02_final_drug_level_characteristics.csv"
@@ -219,7 +219,7 @@ def main() -> None:
 
     con = duckdb.connect()
     con.execute(
-        "SET threads=8; SET memory_limit='20GB'; SET temp_directory='/private/tmp/pds_duckdb'; "
+        "SET threads=8; SET memory_limit='20GB'; SET temp_directory='/private/tmp/pvml_duckdb'; "
         "SET preserve_insertion_order=false; SET enable_progress_bar=false"
     )
     con.execute(f"ATTACH '{AACT_DB}' AS a (READ_ONLY)")

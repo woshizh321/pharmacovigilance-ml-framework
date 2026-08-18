@@ -4,7 +4,7 @@ The scripts are selected from the repaired/final workflow. Preliminary scripts `
 
 ## Terminology/source repair
 
-- `p08_jader_v5_repreflight.py`: structural JADER v5 audit.
+- `p08_jader_v5_repreflight.py`: structural audit of normalized cumulative JADER data.
 - `p10_faers_meddra28_repair.py`: canonical MedDRA 28.0 mapping utilities.
 - `p11_rebuild_faers_case_pt.py`: latest-case FAERS case–PT rebuild.
 - `p12_rebuild_aact_meddra28_ceiling.py`: AACT terminology rebuild.
@@ -17,7 +17,7 @@ The scripts are selected from the repaired/final workflow. Preliminary scripts `
 - `p16_build_bstrict_and_arm_audit.py`: B-STRICT and exact-title arm audit.
 - `p17_build_fda_anchored_faers_labels.py`: FDA-anchored FAERS endpoints.
 - `p18_assessability_coverage_splits.py`: assessability, coverage, and temporal splits.
-- `p19_jader_v5_replication_rebuild.py`: JADER v5 cumulative replication.
+- `p19_jader_v5_replication_rebuild.py`: cumulative JADER replication.
 - `p20_close_preflight_v2.py`: preflight closeout checks/report.
 
 ## Scientific Sections 1–6

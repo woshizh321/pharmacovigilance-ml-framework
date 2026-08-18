@@ -2,7 +2,7 @@
 # The archival scripts do not automatically read this file; update their
 # placeholder Path constants in an isolated working copy before execution.
 
-project_root = "/absolute/path/to/PDS"
+project_root = "/absolute/path/to/project"
 database_root = "/absolute/path/to/Database"
 
 [sources]

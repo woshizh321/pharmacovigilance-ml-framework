@@ -11,7 +11,7 @@ from pathlib import Path
 import duckdb
 
 
-PROJECT = Path("/path/to/PDS")
+PROJECT = Path("/path/to/project")
 OUT = PROJECT / "preflight_v2"
 PROC = PROJECT / "data/processed/preflight_v2"
 LABELS = PROC / "faers_fda_anchored_labels_1_2_3y.parquet"
@@ -61,7 +61,7 @@ def concentration(values, k):
 def main() -> None:
     con = duckdb.connect()
     con.execute(
-        "SET threads=8; SET memory_limit='20GB'; SET temp_directory='/private/tmp/pds_duckdb'; "
+        "SET threads=8; SET memory_limit='20GB'; SET temp_directory='/private/tmp/pvml_duckdb'; "
         "SET preserve_insertion_order=false; SET enable_progress_bar=false"
     )
     con.execute(f"CREATE TABLE labels3 AS SELECT * FROM read_parquet('{LABELS}') WHERE horizon_years=3")
