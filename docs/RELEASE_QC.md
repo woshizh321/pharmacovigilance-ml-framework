@@ -48,8 +48,8 @@ This QC covers the curated code-and-design release only. It does not validate or
 - PASS — `.gitignore` excludes scientific data, models, predictions, generated outputs, manuscripts, local configuration, and common secrets.
 - PASS — CI runs the release-boundary checker and Python parse check only; it does not run scientific analyses.
 - PASS — `LICENSE` and `CITATION.cff` are intentionally absent pending PI/author decisions.
-- PASS — documentation recommends a private GitHub remote until visibility and reuse terms are approved.
+- PASS — the GitHub repository remains private; no public visibility, license, or reuse rights are implied.
 
 ## Disposition
 
-The package is ready for local Git initialization and an atomic documentation/code commit. Actual GitHub push and any public visibility change require a repository URL and an explicit PI decision; public release is not implied by this QC.
+The private GitHub repository is `woshizh321/pharmacovigilance-ml-framework`; the generic-name commit is synchronized to `main` and the matching feature branch. No public visibility change, license, or redistribution permission is implied by this synchronization.
